@@ -2,6 +2,11 @@
 
 **SpendGenius** is an AI-powered personal finance manager that helps you track expenses and income, budget effectively, and gain insights into your financial habits. It provides financial predictions, spending analysis, fraud detection, and secure authentication, all in one streamlined app.
 
+## Collaborators
+This project wouldn't have been possible without the amazing contributions from my collaborators:
+- V S Sreenivaas : [SRNI-2005](https://github.com/SRNI-2005)
+- Sumedh Udupa : [sumedhudupa](https://github.com/sumedhudupa)
+  
 ## Features
 - **Expense & Income Tracking**: Easily log and categorize your transactions.
 - **Budgeting Tools**: Set custom budgets and monitor your spending.
@@ -17,6 +22,7 @@
 - **Database**: MongoDB
 - **APIs**: Integrates financial APIs for real-time data
 - **Authentication**: JWT-based secure authentication
+
 
 ## Contributing
 Contributions are welcome! If you'd like to help improve SpendGenius, feel free to:
