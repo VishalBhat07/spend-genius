@@ -1,0 +1,103 @@
+/* App.css */
+
+/* Global Settings */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #1C1C1E; /* Dark Charcoal */
+  color: #ECF0F1; /* Light Gray for text */
+}
+
+a {
+  color: inherit; /* Links inherit color */
+  text-decoration: none; /* Remove underline from links */
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  color: #ECF0F1; /* Light Gray */
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #2F363D; /* Slate Gray */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #20C997; /* Bright Teal for main heading */
+}
+
+.hero p {
+  font-size: 18px;
+  margin-top: 15px;
+  color: #ECF0F1; /* Light Gray */
+}
+
+.hero button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #20C997; /* Bright Teal button */
+  color: #1C1C1E; /* Dark text */
+  border-radius: 30px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero button:hover {
+  background-color: #1ABC9C; /* Slightly brighter teal */
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #1C1C1E; /* Dark Charcoal */
+}
+
+.feature-item {
+  width: 30%;
+  text-align: center;
+  padding: 20px;
+  background-color: #2F363D; /* Lighter gray for feature blocks */
+  border-radius: 10px;
+}
+
+.feature-item h2 {
+  color: #9B59B6; /* Electric Purple for feature titles */
+}
+
+.feature-item p {
+  margin-top: 10px;
+  color: #ECF0F1;
+}
+
+/* Footer */
+footer {
+  background-color: #1C1C1E;
+  padding: 20px;
+  text-align: center;
+  color: #ECF0F1;
+}
+
+footer a {
+  color: #20C997; /* Teal for footer links */
+  margin-left: 15px;
+  font-size: 16px;
+}

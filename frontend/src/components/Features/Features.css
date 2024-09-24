@@ -1,0 +1,66 @@
+/* Features Section Styling */
+.features {
+    background-color: #1C1C1E; /* Dark Charcoal background */
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .features-title {
+    font-size: 2.5rem; /* Title font size */
+    color: #20C997; /* Teal for title */
+    margin-bottom: 30px; /* Spacing below title */
+  }
+  
+  .features-grid {
+    display: flex; /* Flexbox for grid layout */
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: center; /* Center the grid items */
+  }
+  
+  /* Feature Item Styling */
+  .feature-item {
+    background-color: #2F363D; /* Slate Gray background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside the item */
+    margin: 15px; /* Margin between items */
+    width: 300px; /* Fixed width for feature items */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+  }
+  
+  /* Icon Styling */
+  .feature-icon {
+    font-size: 3rem; /* Size of the icon */
+    margin-bottom: 15px; /* Space below the icon */
+  }
+  
+  /* Feature Title Styling */
+  .feature-item h3 {
+    color: #9B59B6; /* Electric Purple for feature titles */
+    margin-bottom: 10px; /* Spacing below titles */
+  }
+  
+  /* Feature Description Styling */
+  .feature-item p {
+    color: #ECF0F1; /* Light Gray for text */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .features-title {
+      font-size: 2rem; /* Adjust title size for smaller screens */
+    }
+  
+    .feature-item {
+      width: 100%; /* Full width for items on small screens */
+      max-width: 300px; /* Max width to maintain appearance */
+    }
+  }
+  

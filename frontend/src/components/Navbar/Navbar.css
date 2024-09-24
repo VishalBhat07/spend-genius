@@ -1,0 +1,83 @@
+/* Navbar.css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1c1c1e; /* Dark Charcoal */
+  color: #ecf0f1; /* Light Gray for text */
+}
+
+.navbar-logo h1 {
+  color: #20c997; /* Bright Teal for logo */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 25px;
+}
+
+.navbar-links li {
+  display: inline-block;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: #ecf0f1; /* Light Gray for links */
+  padding: 10px 15px;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-radius: 5px;
+}
+
+.navbar-links li a:hover {
+  color: #9b59b6; /* Electric Purple hover */
+  background-color: #2f363d; /* Lighter gray hover background */
+}
+
+.btn-login {
+  background-color: #20c997; /* Bright Teal button */
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #1c1c1e; /* Dark background for text */
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-login:hover {
+  background-color: #1abc9c; /* Slightly brighter teal on hover */
+  color: #ecf0f1; /* Light text on hover */
+}
+
+.btn-github {
+  background-color: #20c997; /* Bright Teal button */
+  padding: 8px 15px;
+  border-radius: 20px;
+  color: #1c1c1e; /* Dark background for text */
+  font-weight: bold;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-github:hover {
+  background-color: #1abc9c; /* Slightly brighter teal on hover */
+  color: #ecf0f1; /* Light text on hover */
+}
+
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none; /* Hides the navbar links on smaller screens */
+  }
+}

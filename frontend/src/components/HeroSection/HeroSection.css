@@ -1,0 +1,39 @@
+/* Hero Section Styling */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2f363d; /* Slate Gray background */
+  text-align: center;
+}
+
+.hero-content {
+  color: #ecf0f1; /* Light Gray text */
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #20c997; /* Teal for heading */
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ecf0f1; /* Light Gray for text */
+}
+
+.hero-button {
+  background-color: #20c997; /* Teal button */
+  color: #1c1c1e; /* Dark text */
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 1rem;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.hero-button:hover {
+  background-color: #1abc9c; /* Slightly brighter teal on hover */
+}
