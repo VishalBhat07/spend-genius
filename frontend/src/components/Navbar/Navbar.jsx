@@ -1,7 +1,8 @@
 import React from "react";
 import "./Navbar.css";
 import { FaGithub } from "react-icons/fa"; // Importing the GitHub icon
-
+import {Link} from "react-router-dom"
+import Login from "../Login/Login";
 const Navbar = () => {
   return (
     <nav className="navbar">
@@ -10,26 +11,26 @@ const Navbar = () => {
       </div>
       <ul className="navbar-links">
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">Home</Link>
         </li>
         <li>
-          <a href="#features">Features</a>
+          <Link to="/features">Features</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <a href="https://github.com/VishalBhat07/spend-genius" className="github-button">
+          <Link to="https://github.com/VishalBhat07/spend-genius" className="github-button">
             <FaGithub /> GitHub
-          </a>
+          </Link>
         </li>
         <li>
-          <a href="#login" className="btn-login">
+          <Link to="/login" className="btn-login">
             Login
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>
