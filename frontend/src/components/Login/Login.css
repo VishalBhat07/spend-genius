@@ -1,0 +1,104 @@
+/* Login.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e; /* Dark Charcoal */
+    color: #ecf0f1; /* Light Gray */
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center;
+    height: calc(100vh - 40px); /* Adjust height to fit the header and footer */
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #2c3e50; /* Subtle Gray for form background */
+    border-radius: 12px; /* Increased border radius for a softer look */
+    padding: 30px; /* Increased padding for spaciousness */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Increased max-width for a larger box */
+    min-height: 400px; /* Increased minimum height for a taller box */
+    margin: 10px 0; /* Reduced margin to decrease gap with header/footer */
+}
+
+h2 {
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for input fields */
+    margin: 10px 0; /* Space between inputs */
+    border: none;
+    border-radius: 4px;
+    background-color: #34495e; /* Darker subtle gray for inputs */
+    color: #ecf0f1; /* Light Gray */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #20c997; /* Bright Teal */
+}
+
+button {
+    width: 100%;
+    padding: 12px; /* Increased padding for buttons */
+    background-color: #20c997; /* Bright Teal */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1abc9c; /* Brighter Teal on hover */
+}
+
+.tab {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background: none;
+    border: none;
+    color: #ecf0f1; /* Light Gray */
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.tab button.active {
+    border-bottom: 2px solid #20c997; /* Bright Teal */
+}
+
+.link {
+    color: #9b59b6; /* Electric Purple */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles to ensure it is always at the bottom */
+footer {
+    padding: 10px 0; /* Padding for footer */
+    background-color: #2c3e50; /* Example background */
+    color: #ecf0f1; /* Light Gray text */
+    text-align: center; /* Center footer text */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure it is positioned properly */
+}

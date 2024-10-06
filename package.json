@@ -1,0 +1,19 @@
+{
+  "name": "spend-genius",
+  "version": "1.0.0",
+  "description": "**SpendGenius** is an AI-powered personal finance manager that helps you track expenses and income, budget effectively, and gain insights into your financial habits. It provides financial predictions, spending analysis, fraud detection, and secure authentication, all in one streamlined app.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumedhudupa/spend-genius.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumedhudupa/spend-genius/issues"
+  },
+  "homepage": "https://github.com/sumedhudupa/spend-genius#readme"
+}
