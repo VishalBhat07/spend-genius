@@ -1,74 +1,104 @@
+/* Login.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1c1c1e; /* Dark Charcoal */
+    color: #ecf0f1; /* Light Gray */
+}
+
 .container {
-    width: auto;
-    padding: 20px;
-    margin: 50px auto;
-    background-color: #444; /* Slightly lighter for the form */
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(44, 62, 80, 0.3); /* Subtle Gray */
     display: flex;
-    justify-content: center;
-    font-size: 24px;
-}
-
-.auth-form {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-.auth-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.auth-options {
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Align children vertically */
+    justify-content: center; /* Center vertically */
     align-items: center;
+    height: calc(100vh - 40px); /* Adjust height to fit the header and footer */
+    padding: 20px;
+}
+
+.form-container {
+    background-color: #2c3e50; /* Subtle Gray for form background */
+    border-radius: 12px; /* Increased border radius for a softer look */
+    padding: 30px; /* Increased padding for spaciousness */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); /* More pronounced shadow */
+    width: 100%; /* Full width */
+    max-width: 500px; /* Increased max-width for a larger box */
+    min-height: 400px; /* Increased minimum height for a taller box */
+    margin: 10px 0; /* Reduced margin to decrease gap with header/footer */
+}
+
+h2 {
     text-align: center;
 }
 
-.email-auth, .google-auth {
-    width: 45%; /* Set equal widths for both sections */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px; /* Increased padding for input fields */
+    margin: 10px 0; /* Space between inputs */
+    border: none;
+    border-radius: 4px;
+    background-color: #34495e; /* Darker subtle gray for inputs */
+    color: #ecf0f1; /* Light Gray */
 }
 
-input {
-    width: 100%;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #2c3e50; /* Subtle Gray */
-    border-radius: 5px;
-    font-size: 20px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    outline: none;
+    border: 2px solid #20c997; /* Bright Teal */
 }
 
 button {
+    width: 100%;
+    padding: 12px; /* Increased padding for buttons */
     background-color: #20c997; /* Bright Teal */
-    color: #fff;
+    color: white;
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 18px;
+    border-radius: 4px;
     cursor: pointer;
-    width: max-content;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #1abf89; /* Brighter Teal */
+    background-color: #1abc9c; /* Brighter Teal on hover */
 }
 
-.google-login {
-    background-color: #4285F4; /* Google Blue */
-    margin-bottom: 10px;
+.tab {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
 }
 
-.google-login:hover {
-    background-color: #357ae8; /* Darker Google Blue */
+.tab button {
+    background: none;
+    border: none;
+    color: #ecf0f1; /* Light Gray */
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px;
 }
 
-.divider {
-    width: 50%;
-    color: #d3d3d3;
-    font-size: 20px;
-    font-weight: bold;
+.tab button.active {
+    border-bottom: 2px solid #20c997; /* Bright Teal */
+}
+
+.link {
+    color: #9b59b6; /* Electric Purple */
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Footer styles to ensure it is always at the bottom */
+footer {
+    padding: 10px 0; /* Padding for footer */
+    background-color: #2c3e50; /* Example background */
+    color: #ecf0f1; /* Light Gray text */
+    text-align: center; /* Center footer text */
+    width: 100%; /* Full width */
+    position: relative; /* Ensure it is positioned properly */
 }
