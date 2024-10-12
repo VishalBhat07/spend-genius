@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/sumedhudupa/spend-genius/issues"
   },
-  "homepage": "https://github.com/sumedhudupa/spend-genius#readme"
+  "homepage": "https://github.com/sumedhudupa/spend-genius#readme",
+  "dependencies": {
+    "chart.js": "^4.4.4",
+    "react-chartjs-2": "^5.2.0"
+  }
 }
