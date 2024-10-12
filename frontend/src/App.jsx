@@ -6,6 +6,7 @@ import HeroSection from "./components/HeroSection/HeroSection";
 import Features from "./components/Features/Features";
 import Footer from "./components/Footer/Footer";
 import Login from "./components/Login/Login"; 
+import Dashboard from "./components/dashboard/Dashboard";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" exact element={<HeroSection />} /> {/* Home Route */}
+        <Route path="/dashboard" exact element={<Dashboard />} /> {/* Dashboard Route */}
         <Route path="/features" element={<Features />} /> {/* Features Route */}
         <Route path="/login" element={<Login />} />
       </Routes>
